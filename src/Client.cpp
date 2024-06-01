@@ -26,7 +26,7 @@
 
 Client::Client() {
     options = StartupOptions::GetInstance();
-    //arpMap = ParseArpFile();
+    arpMap = ParseArpFile();
     if(options->IsVerbose())
     {
         PrintArpMap(arpMap);
