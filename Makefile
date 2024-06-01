@@ -13,11 +13,14 @@ link:
 		./bin/cmp/Client.o \
 		./bin/cmp/Server.o \
 
-run_client:
-	sudo ./bin/ArpWatchNet -c 127.0.0.1 12345 -v
+run_client_file:
+	sudo ./bin/ArpWatchNet -c 127.0.0.1 12345 -f -v
 
-run_client_test:
-	./bin/ArpWatchNet -c 127.0.0.1 12345 -a ./tests/mock_arp.txt -v
+run_client_file_test:
+	./bin/ArpWatchNet -c 127.0.0.1 12345 -f -a ./tests/mock_arp.txt -v
+
+run_client_port:
+	sudo ./bin/ArpWatchNet -c 127.0.0.1 12345 -p eth0 -v
 
 run_server:
 	./bin/ArpWatchNet -s 12345
