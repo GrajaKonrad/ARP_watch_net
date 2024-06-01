@@ -13,27 +13,18 @@ StartupOptions - contains simple code to set some default values in the program.
 ## Program Execution
 
 To start the program in server mode use:
-
 make run_server
-
 or
-
 ./bin/ArpWatchNet -s 12345
 
 To start the program in client mode with packet capture use:
-
 make run_client_port
-
 or
-
 sudo ./bin/ArpWatchNet -c 127.0.0.1 12345 -p eth0
 
 To start the program in client mode with ARP file watch use:
-
 make run_client_file
-
 or
-
 sudo ./bin/ArpWatchNet -c 127.0.0.1 12345 -f
 
 
