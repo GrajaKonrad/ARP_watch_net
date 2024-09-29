@@ -76,5 +76,5 @@ sudo ./bin/ArpWatchNet -c 127.0.0.1 12345 -f
 - `-v`: Verbose output.
 - `-f`: **CLIENT Only**. Start in file monitor mode. Uses the ARP file to track changes in the ARP table, instead of captured packets.
 - `-p [INTERFACE]`: **CLIENT Only**. Start in packet capture mode. Uses captured ARP packets to identify new and changed ARP entries.
-- `-a [ARP_PATH]`: **CLIENT Only, only viable with -f**: Specifies a custom path to the ARP file, default "/proc/net/arp".
-- `-t [ARP_INTERVAL]`: **CLIENT Only, only viable with -f**: Specifies the custom time between subsequent file reads in seconds, default 10 seconds.
+- `-a [ARP_PATH]`: **CLIENT Only, viable with -f**: Specifies a custom path to the ARP file, default "/proc/net/arp".
+- `-t [ARP_INTERVAL]`: **CLIENT Only, viable with -f**: Specifies the custom time between subsequent file reads in seconds, default 10 seconds.
